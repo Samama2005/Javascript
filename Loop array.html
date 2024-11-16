@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perform Action</title>
+    <script>
+        function printHi() {
+            for (let i = 2; i <= 10; i += 2) {
+                console.log("hi" + [i]);
+                
+                const outputDiv = document.getElementById('output');
+                const newElement = document.createElement('p');
+                newElement.textContent = "hi" + i;
+                outputDiv.appendChild(newElement);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Perform Action Example</h1>
+    <button onclick="printHi()">Click Me</button>
+    <div id="output"></div>
+</body>
+</html>
